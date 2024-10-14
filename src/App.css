@@ -1,0 +1,21 @@
+/* Applies 10px padding to the left and right of all elements with the .padded class */
+.padded {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Optional: You can also apply padding to the top and bottom if needed */
+  .padded-all {
+    padding: 10px;
+  }
+  
+  /* Optional: Apply a default font and margin reset to the whole app */
+  .App {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Additional styling can be added as needed */
+  

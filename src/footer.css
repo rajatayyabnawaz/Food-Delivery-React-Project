@@ -1,0 +1,73 @@
+.footer {
+    background-color: black; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about, .links, .contacts {
+    flex: 1;
+    margin: 10px;
+}
+
+.about h1, .links h2, .contacts h3 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about img {
+    margin: 0 10px;
+    width: 24px; 
+    height: 24px;
+}
+
+.links ul, .contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li, .contacts li {
+    margin-bottom: 10px;
+}
+
+.links h2, .contacts h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.links li, .contacts li {
+    font-size: 14px;
+    color: #ddd; 
+}
+
+.links li:hover, .contacts li:hover {
+    color: #fff; 
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about, .links, .contacts {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 12px; 
+    }
+}

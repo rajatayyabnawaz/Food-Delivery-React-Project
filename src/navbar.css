@@ -1,0 +1,124 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%; /* Responsive padding */
+    padding-right: 5%; /* Responsive padding */
+    background-color: white;
+    color: black;
+    height: 90px;
+    border-bottom: 2px solid black;
+}
+
+/* Middle section of the navbar */
+.links {
+    display: flex; /* Default to flex for desktop */
+    justify-content: center; /* Center items in the middle */
+}
+
+/* Navbar items styles */
+.links ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+/* Navbar items */
+.links li {
+    margin: 0 15px; /* Adjusted margin for spacing */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid red;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Applying styles to links */
+.links ul li a { 
+    text-decoration: none;  /* Removes underline */
+    color: black;           /* Ensures text color is black */
+    transition: color 0.3s; /* Adds a color transition effect */
+}
+
+/* Optional hover effect for links */
+.links ul li a:hover {
+    color: red; /* Change color on hover */
+}
+
+/* Disabled link styles */
+.links ul li a.disabled {
+    color: gray; /* Change color to indicate it's disabled */
+    pointer-events: none; /* Prevent click events */
+    cursor: not-allowed; /* Change cursor to indicate disabled */
+}
+
+/* Toggle button styles for mobile view */
+.toggle-button {
+    display: none; /* Hidden by default */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Icon styles */
+.icon {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Add spacing between icons */
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column; /* Maintain row layout */
+        height: auto; /* Adjust height for mobile */
+    }
+
+    .links {
+        display: none; /* Hide links by default */
+        width: 100%;
+        flex-direction: column; /* Stack links vertically */
+        text-align: center;
+        background-color: black;
+        position: absolute;
+        top: 70px; /* Adjust to be below the navbar */
+        left: 0;
+        transition: max-height 0.3s ease;
+        max-height: 0; /* Hide the links */
+        overflow: hidden;
+    }
+
+    .links.active {
+        display: flex; /* Show links when active */
+        max-height: 500px; /* Adjust height as needed */
+    }
+
+    ul {
+        flex-direction: column; /* Stack links vertically */
+        padding: 10px 0; /* Optional padding */
+        margin: 0; /* Reset margin */
+    }
+
+    li {
+        margin: 10px 0; /* Space between vertical items */
+    }
+
+    .toggle-button {
+        display: flex; /* Show toggle button on mobile */
+        font-size: 30px; /* Hamburger icon size */
+        color: white; /* Hamburger icon color */
+        cursor: pointer;
+        padding: 10px; /* Space around the icon */
+    }
+}

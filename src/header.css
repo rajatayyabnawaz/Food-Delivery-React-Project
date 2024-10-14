@@ -1,0 +1,45 @@
+.body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    height: 40vw;
+    margin: 20px auto;
+    background-image: url('./assetss/header_img.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+}
+
+.header-content h1 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+.viewbuttonn {
+    height: 5vh;
+    width: 20%;
+    max-width: 150px;
+    border-radius: 30px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: green;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.viewbuttonn:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}

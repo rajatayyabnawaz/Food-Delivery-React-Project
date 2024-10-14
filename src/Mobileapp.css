@@ -1,0 +1,65 @@
+.mobile-app-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center; /* Center align text for a better appearance */
+    background-color: white; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Margin for spacing above and below */
+}
+
+.mobile-app-container h1 {
+    font-size: 2.5rem; /* Larger font for the main heading */
+    color: #333; /* Dark color for the text */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.mobile-app-container p {
+    font-size: 1.2rem; /* Slightly larger font for description */
+    color: #555; /* Medium grey color for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.features {
+    text-align: left; /* Align features to the left */
+    margin: 20px 0; /* Space around the features section */
+}
+
+.features h2 {
+    font-size: 1.8rem; /* Medium font size for features heading */
+    color: #333; /* Dark color for features heading */
+    margin-bottom: 10px; /* Space below the features heading */
+}
+
+.features ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.features li {
+    font-size: 1rem; /* Standard font size for list items */
+    color: #555; /* Grey color for list items */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.app-buttons {
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.download-btn {
+    background-color: #FF5733; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 10px; /* Space around buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Standard font size for buttons */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.download-btn:hover {
+    background-color: #C70039; /* Darker shade on hover */
+}
